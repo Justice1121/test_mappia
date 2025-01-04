@@ -116,6 +116,26 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
+				<Layers>GH:openbasiskaart___osm___epsg_28992_hq</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:900913</SRS>
+				<BoundingBox SRS="EPSG:900913" minx="-2.003750834E7" miny="-2.003750834E7" maxx="2.003750834E7" maxy="2.003750834E7"></BoundingBox>
+				<Resolutions>156543.03390625 78271.516953125 39135.7584765625 19567.87923828125 9783.939619140625 4891.9698095703125 2445.9849047851562 1222.9924523925781 611.4962261962891 305.74811309814453 152.87405654907226 76.43702827453613 38.218514137268066 19.109257068634033 9.554628534317017 4.777314267158508 2.388657133579254 1.194328566789627 0.5971642833948135 0.29858214169740677 0.14929107084870338 0.07464553542435169 0.037322767712175846 0.018661383856087923 0.009330691928043961 0.004665345964021981 0.0023326729820109904 0.0011663364910054952 5.831682455027476E-4 2.915841227513738E-4 1.457920613756869E-4</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
+				<Layers>GH:openbasiskaart___osm___epsg_28992_hq</Layers>
+				<Styles></Styles>
+			</TileSet>
+			<TileSet>
+				<SRS>EPSG:4326</SRS>
+				<BoundingBox SRS="EPSG:4326" minx="-180.0" miny="-90.0" maxx="0.0" maxy="90.0"></BoundingBox>
+				<Resolutions>0.703125 0.3515625 0.17578125 0.087890625 0.0439453125 0.02197265625 0.010986328125 0.0054931640625 0.00274658203125 0.001373291015625 6.866455078125E-4 3.4332275390625E-4 1.71661376953125E-4 8.58306884765625E-5 4.291534423828125E-5 2.1457672119140625E-5 1.0728836059570312E-5 5.364418029785156E-6 2.682209014892578E-6 1.341104507446289E-6 6.705522537231445E-7 3.3527612686157227E-7</Resolutions>
+				<Width>256</Width>
+				<Height>256</Height>
+				<Format>image/png</Format>
 				<Layers>GH:percelen</Layers>
 				<Styles></Styles>
 			</TileSet>
@@ -156,7 +176,7 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:openbasiskaart___osm___epsg_28992_hq</Layers>
+				<Layers>GH:openbasiskaart</Layers>
 				<Styles></Styles>
 			</TileSet>
 			<TileSet>
@@ -166,18 +186,38 @@
 				<Width>256</Width>
 				<Height>256</Height>
 				<Format>image/png</Format>
-				<Layers>GH:openbasiskaart___osm___epsg_28992_hq</Layers>
+				<Layers>GH:openbasiskaart</Layers>
 				<Styles></Styles>
 			</TileSet>
 		</VendorSpecificCapabilities>
 		<UserDefinedSymbolization SupportSLD="1" UserLayer="1" UserStyle="1" RemoteWFS="1"></UserDefinedSymbolization>
 		<Layer>
 			<Layer queryable="1" opaque="0">
+				<Name>GH:openbasiskaart___osm___epsg_28992_hq</Name>
+				<Title>openbasiskaart___osm___epsg_28992_hq</Title>
+				<Abstract>GH:openbasiskaart___osm___epsg_28992_hq ABSTRACT</Abstract>
+				<KeywordList>
+					<Keyword>group:tif:::disabledownload:notListing::maxZoom:7</Keyword>
+				</KeywordList>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox minx="-1.657291602607479" miny="48.04050187220449" maxx="12.431727264736638" maxy="56.110384245786484"></LatLonBoundingBox>
+				<BoundingBox SRS="EPSG:4326" minx="-285401.92" miny="22598.080000000075" maxx="595401.9199999999" maxy="903401.92"></BoundingBox>
+				<Style>
+					<Name>1</Name>
+					<Title>1</Title>
+					<Abstract></Abstract>
+					<LegendURL width="20" height="20">
+						<Format>image/png</Format>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=openbasiskaart___osm___epsg_28992_hq"></OnlineResource>
+					</LegendURL>
+				</Style>
+			</Layer>
+			<Layer queryable="1" opaque="0">
 				<Name>GH:percelen</Name>
 				<Title>percelen</Title>
 				<Abstract>GH:percelen ABSTRACT</Abstract>
 				<KeywordList>
-					<Keyword>group:shp:::disabledownload:notListing::maxZoom:7</Keyword>
+					<Keyword>group:shp:::disabledownload:notListing::maxZoom:13</Keyword>
 				</KeywordList>
 				<SRS>EPSG:4326</SRS>
 				<LatLonBoundingBox minx="6.442239540293348" miny="52.169293969072946" maxx="6.477620333053191" maxy="52.1957115394035"></LatLonBoundingBox>
@@ -197,7 +237,7 @@
 				<Title>luchtfoto_actueel_ortho_8cm_rgb</Title>
 				<Abstract>GH:luchtfoto_actueel_ortho_8cm_rgb ABSTRACT</Abstract>
 				<KeywordList>
-					<Keyword>group:tif:::disabledownload:notListing::maxZoom:7</Keyword>
+					<Keyword>group:tif:::disabledownload:notListing::maxZoom:13</Keyword>
 				</KeywordList>
 				<SRS>EPSG:4326</SRS>
 				<LatLonBoundingBox minx="-3.045167351396768" miny="47.8189580549389" maxx="13.819668430707159" maxy="56.306545425654576"></LatLonBoundingBox>
@@ -213,11 +253,11 @@
 				</Style>
 			</Layer>
 			<Layer queryable="1" opaque="0">
-				<Name>GH:openbasiskaart___osm___epsg_28992_hq</Name>
-				<Title>openbasiskaart___osm___epsg_28992_hq</Title>
-				<Abstract>GH:openbasiskaart___osm___epsg_28992_hq ABSTRACT</Abstract>
+				<Name>GH:openbasiskaart</Name>
+				<Title>openbasiskaart</Title>
+				<Abstract>GH:openbasiskaart ABSTRACT</Abstract>
 				<KeywordList>
-					<Keyword>group:tif:::disabledownload:notListing::maxZoom:7</Keyword>
+					<Keyword>group:tif:::disabledownload:notListing::maxZoom:13</Keyword>
 				</KeywordList>
 				<SRS>EPSG:4326</SRS>
 				<LatLonBoundingBox minx="-1.657291602607479" miny="48.04050187220449" maxx="12.431727264736638" maxy="56.110384245786484"></LatLonBoundingBox>
@@ -228,7 +268,7 @@
 					<Abstract></Abstract>
 					<LegendURL width="20" height="20">
 						<Format>image/png</Format>
-						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=openbasiskaart___osm___epsg_28992_hq"></OnlineResource>
+						<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://maps.csr.ufmg.br:443/geoserver/wms?request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=openbasiskaart"></OnlineResource>
 					</LegendURL>
 				</Style>
 			</Layer>
